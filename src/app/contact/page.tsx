@@ -138,7 +138,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Localisation</h3>
-                    <p className="text-sm text-gray-500">Paris, France</p>
+                    <p className="text-sm text-gray-500">18 Rue Strauss, 29000 Quimper, France</p>
                   </div>
                 </div>
 
@@ -157,26 +157,18 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div className="overflow-hidden rounded-2xl border border-gray-100 bg-gradient-to-br from-primary-50 to-primary-100">
-                <div className="flex h-64 items-center justify-center">
-                  <div className="text-center">
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      className="mx-auto text-primary-400"
-                    >
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    <p className="mt-3 text-sm font-medium text-primary-600">Paris, France</p>
-                    <p className="text-xs text-primary-400">Ile-de-France</p>
-                  </div>
-                </div>
+              {/* Map */}
+              <div className="overflow-hidden rounded-2xl border border-gray-100">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.5!2d-4.1!3d47.995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4810d6f3a0a0a0a1%3A0x0!2s18%20Rue%20Strauss%2C%2029000%20Quimper!5e0!3m2!1sfr!2sfr!4v1"
+                  width="100%"
+                  height="256"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="SOLDEV - Quimper"
+                />
               </div>
             </motion.div>
           </div>
