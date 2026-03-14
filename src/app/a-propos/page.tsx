@@ -8,21 +8,21 @@ import Link from "next/link";
 const founders = [
   {
     name: "Christophe Le Chevallier",
-    role: "Cofondateur & CTO",
+    role: "Cofondateur",
     photo: "/christophe.jfif",
     linkedin: null,
     description:
-      "Expert en technologie et transformation digitale, Christophe dirige la vision technique de SOLDEV. Avec une vaste expérience internationale en développement web, IA et architectures data, il apporte les meilleures pratiques du marché.",
-    skills: ["Développement Web", "Intelligence Artificielle", "Data Engineering", "Next.js", "Architecture Systèmes"],
+      "Associé et cofondateur de SOLDEV, Christophe apporte sa vision stratégique et son expertise pour accompagner la croissance de l'entreprise et de ses clients.",
+    skills: ["Stratégie", "Business Development", "Gestion de Projets", "Innovation"],
   },
   {
     name: "Harlow Fres",
-    role: "Cofondateur",
+    role: "Cofondateur & CTO",
     photo: "/Harlow Fres.jfif",
     linkedin: "https://www.linkedin.com/in/harlow-fres/",
     description:
-      "Associé et cofondateur de SOLDEV, Harlow apporte sa vision stratégique et son expertise pour accompagner la croissance de l'entreprise et de ses clients.",
-    skills: ["Stratégie", "Business Development", "Gestion de Projets", "Innovation"],
+      "Expert en technologie et transformation digitale, Harlow dirige la vision technique de SOLDEV. Avec une vaste expérience internationale en développement web, IA et architectures data, il apporte les meilleures pratiques du marché.",
+    skills: ["Développement Web", "Intelligence Artificielle", "Data Engineering", "Next.js", "Architecture Systèmes"],
   },
 ];
 
