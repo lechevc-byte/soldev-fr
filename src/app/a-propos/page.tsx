@@ -12,16 +12,16 @@ const founders = [
     photo: "/christophe.jpg",
     linkedin: "https://www.linkedin.com/in/christophe-le-chevallier-a69b8037/",
     description:
-      "Associé et cofondateur de SOLDEV, Christophe apporte sa vision stratégique et son expertise pour accompagner la croissance de l'entreprise et de ses clients.",
-    skills: ["Stratégie", "Business Development", "Gestion de Projets", "Innovation"],
+      "Consultant en transformation digitale et cofondateur de SOLDEV, Christophe accompagne les entreprises dans leur transition numérique. Sa vision stratégique et son expertise conseil permettent d'aligner technologie et objectifs business.",
+    skills: ["Transformation Digitale", "Conseil & Stratégie", "Gestion de Projets", "Business Development", "Innovation"],
   },
   {
     name: "Harlow Fres",
-    role: "Cofondateur & CTO",
+    role: "Cofondateur",
     photo: "/harlow-fres.jpg",
     linkedin: "https://www.linkedin.com/in/harlow-fres/",
     description:
-      "Expert en technologie et transformation digitale, Harlow dirige la vision technique de SOLDEV. Avec une vaste expérience internationale en développement web, IA et architectures data, il apporte les meilleures pratiques du marché.",
+      "Expert technique et cofondateur de SOLDEV, Harlow dirige la vision technologique de l'entreprise. Avec une vaste expérience internationale en développement web, IA et architectures data, il conçoit et pilote les solutions techniques les plus exigeantes.",
     skills: ["Développement Web", "Intelligence Artificielle", "Data Engineering", "Next.js", "Architecture Systèmes"],
   },
 ];
