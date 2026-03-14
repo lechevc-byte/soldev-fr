@@ -2,10 +2,192 @@
 
 import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
+import { useState, useCallback } from "react";
+import { GoogleReCaptchaProvider, useGoogleReCaptcha } from "react-google-recaptcha-v3";
+
+function ContactForm() {
+  const { executeRecaptcha } = useGoogleReCaptcha();
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleSubmit = useCallback(
+    async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      if (!executeRecaptcha) return;
+
+      setStatus("loading");
+      setErrorMsg("");
+
+      const form = e.currentTarget;
+      const formData = new FormData(form);
+
+      try {
+        const recaptchaToken = await executeRecaptcha("contact");
+
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: formData.get("name"),
+            email: formData.get("email"),
+            subject: formData.get("subject"),
+            message: formData.get("message"),
+            recaptchaToken,
+          }),
+        });
+
+        if (!res.ok) {
+          const data = await res.json();
+          throw new Error(data.error || "Erreur lors de l'envoi");
+        }
+
+        setStatus("success");
+        form.reset();
+      } catch (err) {
+        setStatus("error");
+        setErrorMsg(err instanceof Error ? err.message : "Erreur lors de l'envoi");
+      }
+    },
+    [executeRecaptcha]
+  );
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
+      <h2 className="text-2xl font-bold text-gray-900">Envoyez-nous un message</h2>
+      <p className="mt-2 text-sm text-gray-500">Nous vous répondrons sous 24 heures.</p>
+
+      {status === "success" ? (
+        <div className="mt-8 rounded-2xl border border-green-200 bg-green-50 p-8 text-center">
+          <svg className="mx-auto h-12 w-12 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+          <h3 className="mt-4 text-lg font-semibold text-green-900">Message envoyé !</h3>
+          <p className="mt-2 text-sm text-green-700">Nous reviendrons vers vous très rapidement.</p>
+          <button
+            onClick={() => setStatus("idle")}
+            className="mt-6 text-sm font-medium text-green-600 hover:text-green-700"
+          >
+            Envoyer un autre message
+          </button>
+        </div>
+      ) : (
+        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                Nom
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                className="mt-2 block w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
+                placeholder="Votre nom"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                className="mt-2 block w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
+                placeholder="email@exemple.fr"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
+              Sujet
+            </label>
+            <select
+              id="subject"
+              name="subject"
+              className="mt-2 block w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
+            >
+              <option value="">Sélectionnez un sujet</option>
+              <option value="dev">Développement Web & Apps</option>
+              <option value="ia">Intelligence Artificielle</option>
+              <option value="data">Data & Analytics</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={5}
+              required
+              className="mt-2 block w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
+              placeholder="Décrivez votre projet ou votre question..."
+            />
+          </div>
+
+          {status === "error" && (
+            <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+              {errorMsg}
+            </div>
+          )}
+
+          <button
+            type="submit"
+            disabled={status === "loading"}
+            className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {status === "loading" ? (
+              <>
+                <svg className="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                </svg>
+                Envoi en cours...
+              </>
+            ) : (
+              <>
+                Envoyer le message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </>
+            )}
+          </button>
+
+          <p className="text-xs text-gray-400">
+            Ce site est protégé par reCAPTCHA et les{" "}
+            <a href="https://policies.google.com/privacy" className="underline" target="_blank" rel="noopener noreferrer">
+              règles de confidentialité
+            </a>{" "}
+            et{" "}
+            <a href="https://policies.google.com/terms" className="underline" target="_blank" rel="noopener noreferrer">
+              conditions d&apos;utilisation
+            </a>{" "}
+            de Google s&apos;appliquent.
+          </p>
+        </form>
+      )}
+    </motion.div>
+  );
+}
 
 export default function ContactPage() {
   return (
-    <>
+    <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}>
       <section className="bg-primary-950 pt-32 pb-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <AnimatedSection>
@@ -23,82 +205,7 @@ export default function ContactPage() {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-16 lg:grid-cols-2">
-            {/* Contact Form */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <h2 className="text-2xl font-bold text-gray-900">Envoyez-nous un message</h2>
-              <p className="mt-2 text-sm text-gray-500">Nous vous répondrons sous 24 heures.</p>
-
-              <form className="mt-8 space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid gap-6 sm:grid-cols-2">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                      Nom
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="mt-2 block w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
-                      placeholder="Votre nom"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="mt-2 block w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
-                      placeholder="email@exemple.fr"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
-                    Sujet
-                  </label>
-                  <select
-                    id="subject"
-                    className="mt-2 block w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
-                  >
-                    <option value="">Sélectionnez un sujet</option>
-                    <option value="dev">Développement Web & Apps</option>
-                    <option value="ia">Intelligence Artificielle</option>
-                    <option value="data">Data & Analytics</option>
-                    <option value="autre">Autre</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="mt-2 block w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
-                    placeholder="Décrivez votre projet ou votre question..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
-                >
-                  Envoyer le message
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <line x1="22" y1="2" x2="11" y2="13" />
-                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                  </svg>
-                </button>
-              </form>
-            </motion.div>
+            <ContactForm />
 
             {/* Contact Info */}
             <motion.div
@@ -174,6 +281,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </>
+    </GoogleReCaptchaProvider>
   );
 }
