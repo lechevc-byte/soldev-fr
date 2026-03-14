@@ -10,7 +10,7 @@ const founders = [
     name: "Christophe Le Chevallier",
     role: "Cofondateur",
     photo: "/christophe.jpg",
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/christophe-le-chevallier-a69b8037/",
     description:
       "Associé et cofondateur de SOLDEV, Christophe apporte sa vision stratégique et son expertise pour accompagner la croissance de l'entreprise et de ses clients.",
     skills: ["Stratégie", "Business Development", "Gestion de Projets", "Innovation"],
