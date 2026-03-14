@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import ServiceCard from "@/components/ServiceCard";
-import ProjectCard from "@/components/ProjectCard";
+
 import { FloatingShapesHero, FloatingShapesLight } from "@/components/FloatingShapes";
 
 const services = [
@@ -44,29 +44,6 @@ const services = [
   },
 ];
 
-const projects = [
-  {
-    title: "Plateforme IA Sante",
-    category: "Intelligence Artificielle",
-    description: "Systeme de diagnostic assiste par IA pour un reseau de cliniques. Reduction de 40% du temps de diagnostic.",
-    gradient: "bg-gradient-to-br from-emerald-500 to-emerald-700",
-    tags: ["Python", "TensorFlow", "Next.js", "AWS"],
-  },
-  {
-    title: "Data Pipeline E-commerce",
-    category: "Data Engineering",
-    description: "Infrastructure data temps reel traitant 2M+ evenements/jour pour un acteur majeur du e-commerce francais.",
-    gradient: "bg-gradient-to-br from-accent-500 to-accent-700",
-    tags: ["Apache Kafka", "Spark", "BigQuery", "dbt"],
-  },
-  {
-    title: "SaaS Analytics RH",
-    category: "Developpement Full-Stack",
-    description: "Plateforme SaaS de people analytics avec modeles predictifs de retention et tableaux de bord interactifs.",
-    gradient: "bg-gradient-to-br from-primary-500 to-primary-800",
-    tags: ["Next.js", "PostgreSQL", "Python", "OpenAI"],
-  },
-];
 
 export default function Home() {
   return (
@@ -265,32 +242,6 @@ export default function Home() {
                 </div>
               </div>
             </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* Projects Preview */}
-      <section className="relative py-28 lg:py-36">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <AnimatedSection className="text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-rose-50 to-pink-50 px-4 py-2 text-sm font-semibold text-rose-600">
-              Portfolio
-            </div>
-            <h2 className="text-4xl font-light tracking-tight text-gray-900 lg:text-5xl">
-              Nos{" "}
-              <span className="font-bold bg-gradient-to-r from-rose-500 to-rose-600 bg-clip-text text-transparent">
-                realisations
-              </span>
-            </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-500">
-              Des projets concrets qui ont transforme les processus de nos clients
-            </p>
-          </AnimatedSection>
-
-          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project, i) => (
-              <ProjectCard key={project.title} {...project} delay={i * 0.15} />
-            ))}
           </div>
         </div>
       </section>

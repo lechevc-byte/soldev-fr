@@ -11,7 +11,7 @@ export default function PolitiqueConfidentialitePage() {
       <section className="py-16">
         <div className="prose prose-gray mx-auto max-w-3xl px-6">
           <h2>Introduction</h2>
-          <p>SOLDEV s&apos;engage a proteger la vie privee des visiteurs de son site web. Cette politique de confidentialite explique comment nous collectons, utilisons et protegeons vos informations personnelles, conformement au Reglement General sur la Protection des Donnees (RGPD).</p>
+          <p>CLC CONSULTING (SOLDEV) s&apos;engage a proteger la vie privee des visiteurs de son site web. Cette politique de confidentialite explique comment nous collectons, utilisons et protegeons vos informations personnelles, conformement au Reglement General sur la Protection des Donnees (RGPD).</p>
 
           <h2>Donnees collectees</h2>
           <p>Nous pouvons collecter les donnees personnelles suivantes :</p>

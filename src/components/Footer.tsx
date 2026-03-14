@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = {
@@ -25,11 +26,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex items-center pr-3">
             <Link href="/">
-              <span className="text-3xl font-bold tracking-tight">
-                <span className="bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">SOL</span>
-                <span className="text-gray-900">DEV</span>
-                <span className="text-accent-500 text-base font-medium">.fr</span>
-              </span>
+              <Image
+                src="/logo.png"
+                alt="SOLDEV"
+                width={300}
+                height={150}
+                className="w-full max-w-[300px] h-auto object-contain"
+              />
             </Link>
           </div>
 

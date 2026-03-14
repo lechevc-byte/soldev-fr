@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -34,11 +35,14 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="block px-2">
-            <span className="text-2xl font-bold tracking-tight">
-              <span className="bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">SOL</span>
-              <span className="text-gray-900">DEV</span>
-              <span className="text-accent-500 text-sm font-medium">.fr</span>
-            </span>
+            <Image
+              src="/logotipo.png"
+              alt="SOLDEV"
+              width={180}
+              height={60}
+              className="h-[50px] w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

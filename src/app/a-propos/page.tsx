@@ -2,15 +2,27 @@
 
 import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const founders = [
   {
     name: "Christophe Le Chevallier",
-    role: "Fondateur & CTO",
+    role: "Cofondateur & CTO",
+    photo: "/christophe.jfif",
+    linkedin: null,
     description:
       "Expert en technologie et transformation digitale, Christophe dirige la vision technique de SOLDEV. Avec une vaste experience internationale en developpement web, IA et architectures data, il apporte les meilleures pratiques du marche.",
     skills: ["Developpement Web", "Intelligence Artificielle", "Data Engineering", "Next.js", "Architecture Systemes"],
+  },
+  {
+    name: "Harlow Fres",
+    role: "Cofondateur",
+    photo: "/Harlow Fres.jfif",
+    linkedin: "https://www.linkedin.com/in/harlow-fres/",
+    description:
+      "Associe et cofondateur de SOLDEV, Harlow apporte sa vision strategique et son expertise pour accompagner la croissance de l'entreprise et de ses clients.",
+    skills: ["Strategie", "Business Development", "Gestion de Projets", "Innovation"],
   },
 ];
 
@@ -76,11 +88,11 @@ export default function AProposPage() {
           <AnimatedSection className="text-center">
             <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">L&apos;equipe</span>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 lg:text-4xl">
-              Le fondateur
+              Les fondateurs
             </h2>
           </AnimatedSection>
 
-          <div className="mt-16 mx-auto max-w-2xl">
+          <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
             {founders.map((founder, i) => (
               <motion.div
                 key={founder.name}
@@ -91,12 +103,23 @@ export default function AProposPage() {
                 className="rounded-2xl border border-gray-100 bg-white p-8 lg:p-10"
               >
                 <div className="flex items-center gap-5">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary-50 text-primary-600">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                      <circle cx="12" cy="7" r="4" />
-                    </svg>
-                  </div>
+                  {founder.photo ? (
+                    <div className="relative h-16 w-16 overflow-hidden rounded-2xl">
+                      <Image
+                        src={founder.photo}
+                        alt={founder.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary-50 text-primary-600">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </div>
+                  )}
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">{founder.name}</h3>
                     <p className="text-sm font-medium text-primary-600">{founder.role}</p>
@@ -113,6 +136,19 @@ export default function AProposPage() {
                     </span>
                   ))}
                 </div>
+                {founder.linkedin && (
+                  <a
+                    href={founder.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                    LinkedIn
+                  </a>
+                )}
               </motion.div>
             ))}
           </div>

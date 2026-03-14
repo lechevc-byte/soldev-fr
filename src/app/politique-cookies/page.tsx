@@ -28,6 +28,7 @@ export default function PolitiqueCookiesPage() {
 
           <h2>Contact</h2>
           <p>Pour toute question concernant notre politique de cookies, contactez-nous a <a href="mailto:contact@soldev.fr">contact@soldev.fr</a>.</p>
+          <p className="text-sm text-gray-400 mt-4">CLC CONSULTING - SIREN 878 349 877 - 18 Rue Strauss, 29000 Quimper, France</p>
         </div>
       </section>
     </>
