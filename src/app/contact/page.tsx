@@ -187,7 +187,7 @@ function ContactForm() {
 
 export default function ContactPage() {
   return (
-    <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}>
+    <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}>
       <section className="bg-primary-950 pt-32 pb-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <AnimatedSection>
