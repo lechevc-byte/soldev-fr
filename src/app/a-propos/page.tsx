@@ -9,7 +9,7 @@ const founders = [
   {
     name: "Christophe Le Chevallier",
     role: "Cofondateur",
-    photo: "/christophe.jfif",
+    photo: "/christophe.jpg",
     linkedin: null,
     description:
       "Associé et cofondateur de SOLDEV, Christophe apporte sa vision stratégique et son expertise pour accompagner la croissance de l'entreprise et de ses clients.",
@@ -18,7 +18,7 @@ const founders = [
   {
     name: "Harlow Fres",
     role: "Cofondateur & CTO",
-    photo: "/Harlow Fres.jfif",
+    photo: "/harlow-fres.jpg",
     linkedin: "https://www.linkedin.com/in/harlow-fres/",
     description:
       "Expert en technologie et transformation digitale, Harlow dirige la vision technique de SOLDEV. Avec une vaste expérience internationale en développement web, IA et architectures data, il apporte les meilleures pratiques du marché.",
