@@ -12,8 +12,8 @@ const founders = [
     photo: "/christophe.jfif",
     linkedin: null,
     description:
-      "Expert en technologie et transformation digitale, Christophe dirige la vision technique de SOLDEV. Avec une vaste experience internationale en developpement web, IA et architectures data, il apporte les meilleures pratiques du marche.",
-    skills: ["Developpement Web", "Intelligence Artificielle", "Data Engineering", "Next.js", "Architecture Systemes"],
+      "Expert en technologie et transformation digitale, Christophe dirige la vision technique de SOLDEV. Avec une vaste expérience internationale en développement web, IA et architectures data, il apporte les meilleures pratiques du marché.",
+    skills: ["Développement Web", "Intelligence Artificielle", "Data Engineering", "Next.js", "Architecture Systèmes"],
   },
   {
     name: "Harlow Fres",
@@ -21,15 +21,15 @@ const founders = [
     photo: "/Harlow Fres.jfif",
     linkedin: "https://www.linkedin.com/in/harlow-fres/",
     description:
-      "Associe et cofondateur de SOLDEV, Harlow apporte sa vision strategique et son expertise pour accompagner la croissance de l'entreprise et de ses clients.",
-    skills: ["Strategie", "Business Development", "Gestion de Projets", "Innovation"],
+      "Associé et cofondateur de SOLDEV, Harlow apporte sa vision stratégique et son expertise pour accompagner la croissance de l'entreprise et de ses clients.",
+    skills: ["Stratégie", "Business Development", "Gestion de Projets", "Innovation"],
   },
 ];
 
 const values = [
   {
     title: "Innovation",
-    description: "Nous utilisons les technologies les plus recentes, IA et data, pour offrir des solutions d'avant-garde.",
+    description: "Nous utilisons les technologies les plus récentes, IA et data, pour offrir des solutions d'avant-garde.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
@@ -38,7 +38,7 @@ const values = [
   },
   {
     title: "Excellence",
-    description: "Chaque projet est traite avec la plus grande attention aux details et aux plus hauts standards de qualite.",
+    description: "Chaque projet est traité avec la plus grande attention aux détails et aux plus hauts standards de qualité.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
@@ -47,7 +47,7 @@ const values = [
   },
   {
     title: "Pragmatisme",
-    description: "Nous privilegions les solutions concretes et mesurables. Pas de buzzwords, que des resultats.",
+    description: "Nous privilégions les solutions concrètes et mesurables. Pas de buzzwords, que des résultats.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" />
@@ -55,8 +55,8 @@ const values = [
     ),
   },
   {
-    title: "Resultats",
-    description: "Focalises sur des metriques concretes et le ROI. Le succes de nos clients est notre succes.",
+    title: "Résultats",
+    description: "Focalisés sur des métriques concrètes et le ROI. Le succès de nos clients est notre succès.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
@@ -71,12 +71,12 @@ export default function AProposPage() {
       <section className="bg-primary-950 pt-32 pb-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <AnimatedSection>
-            <span className="text-sm font-semibold uppercase tracking-wider text-accent-400">A propos</span>
+            <span className="text-sm font-semibold uppercase tracking-wider text-accent-400">À propos</span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-white lg:text-5xl">
               L&apos;expertise technique au service de votre croissance
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-primary-300">
-              Nous sommes une entreprise de developpement informatique specialisee en IA et Data, basee en France, passionnee par la creation de solutions technologiques qui font la difference.
+              Nous sommes une entreprise de développement informatique spécialisée en IA et Data, basée en France, passionnée par la création de solutions technologiques qui font la différence.
             </p>
           </AnimatedSection>
         </div>
@@ -86,7 +86,7 @@ export default function AProposPage() {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <AnimatedSection className="text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">L&apos;equipe</span>
+            <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">L&apos;équipe</span>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 lg:text-4xl">
               Les fondateurs
             </h2>
@@ -192,13 +192,13 @@ export default function AProposPage() {
           <AnimatedSection>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Travaillons ensemble ?</h2>
             <p className="mx-auto mt-4 max-w-xl text-gray-500">
-              Nous avons l&apos;equipe et les outils pour transformer vos idees en solutions concreteset performantes.
+              Nous avons l&apos;équipe et les outils pour transformer vos idées en solutions concrètes et performantes.
             </p>
             <Link
               href="/contact"
               className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700"
             >
-              Demarrer un projet
+              Démarrer un projet
             </Link>
           </AnimatedSection>
         </div>

@@ -85,7 +85,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h3 className="text-xl font-bold text-gray-900">Besoin d&apos;aide sur ce sujet ?</h3>
           <p className="mt-2 text-gray-500">
-            SOLDEV peut vous aider a mettre en oeuvre ces strategies dans votre entreprise.
+            SOLDEV peut vous aider à mettre en &oelig;uvre ces stratégies dans votre entreprise.
           </p>
           <Link
             href="/contact"

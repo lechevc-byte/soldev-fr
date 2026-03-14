@@ -14,7 +14,7 @@ export default function ContactPage() {
               Parlons de votre projet
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-primary-300">
-              Vous avez un projet en tete ? Vous souhaitez en savoir plus sur nos services ? Nous sommes la pour vous aider.
+              Vous avez un projet en tête ? Vous souhaitez en savoir plus sur nos services ? Nous sommes là pour vous aider.
             </p>
           </AnimatedSection>
         </div>
@@ -31,7 +31,7 @@ export default function ContactPage() {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-2xl font-bold text-gray-900">Envoyez-nous un message</h2>
-              <p className="mt-2 text-sm text-gray-500">Nous vous repondrons sous 24 heures.</p>
+              <p className="mt-2 text-sm text-gray-500">Nous vous répondrons sous 24 heures.</p>
 
               <form className="mt-8 space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid gap-6 sm:grid-cols-2">
@@ -67,8 +67,8 @@ export default function ContactPage() {
                     id="subject"
                     className="mt-2 block w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
                   >
-                    <option value="">Selectionnez un sujet</option>
-                    <option value="dev">Developpement Web & Apps</option>
+                    <option value="">Sélectionnez un sujet</option>
+                    <option value="dev">Développement Web & Apps</option>
                     <option value="ia">Intelligence Artificielle</option>
                     <option value="data">Data & Analytics</option>
                     <option value="autre">Autre</option>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                     id="message"
                     rows={5}
                     className="mt-2 block w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-100"
-                    placeholder="Decrivez votre projet ou votre question..."
+                    placeholder="Décrivez votre projet ou votre question..."
                   />
                 </div>
 
@@ -151,7 +151,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Horaires</h3>
-                    <p className="text-sm text-gray-500">Lundi a Vendredi, 9h - 18h</p>
+                    <p className="text-sm text-gray-500">Lundi à Vendredi, 9h - 18h</p>
                     <p className="text-xs text-gray-400 mt-1">Fuseau horaire : CET (UTC+1)</p>
                   </div>
                 </div>

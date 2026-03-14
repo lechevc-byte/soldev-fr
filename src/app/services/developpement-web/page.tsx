@@ -14,9 +14,9 @@ const aiUseCases = [
     title: "Assistance au code par IA",
     subtitle: "Nous utilisons des outils comme GitHub Copilot, Claude Code et Cursor pour :",
     items: [
-      "Generation automatique de blocs de code et refactoring intelligent",
+      "Génération automatique de blocs de code et refactoring intelligent",
       "Suggestions contextuelles selon le langage et l'architecture",
-      "Correction immediate d'erreurs et d'incoherences",
+      "Correction immédiate d'erreurs et d'incohérences",
     ],
   },
   {
@@ -25,12 +25,12 @@ const aiUseCases = [
         <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
       </svg>
     ),
-    title: "Optimisation du temps de developpement",
-    subtitle: "Grace a Claude, ChatGPT et des outils d'automatisation CI/CD bases sur l'IA :",
+    title: "Optimisation du temps de développement",
+    subtitle: "Grâce à Claude, ChatGPT et des outils d'automatisation CI/CD basés sur l'IA :",
     items: [
-      "Creation plus rapide de prototypes et MVP",
-      "Automatisation des taches repetitives (tests, deployments)",
-      "Generation de documentation technique en temps reel",
+      "Création plus rapide de prototypes et MVP",
+      "Automatisation des tâches répétitives (tests, deployments)",
+      "Génération de documentation technique en temps réel",
     ],
   },
   {
@@ -39,11 +39,11 @@ const aiUseCases = [
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
-    title: "Tests et debugging acceleres",
+    title: "Tests et debugging accélérés",
     subtitle: "Avec des outils comme SonarQube IA, Snyk et CodeQL :",
     items: [
-      "Detection proactive d'anomalies et de vulnerabilites",
-      "Scenarios de test assistes par IA",
+      "Détection proactive d'anomalies et de vulnérabilités",
+      "Scénarios de test assistés par IA",
       "Analyse en direct des performances du code",
     ],
   },
@@ -56,28 +56,28 @@ const aiUseCases = [
         <line x1="16" y1="17" x2="8" y2="17" />
       </svg>
     ),
-    title: "Documentation et mises a jour automatiques",
-    subtitle: "Avec l'appui de Claude, Notion AI et des outils de documentation automatisee :",
+    title: "Documentation et mises à jour automatiques",
+    subtitle: "Avec l'appui de Claude, Notion AI et des outils de documentation automatisée :",
     items: [
-      "Documentation claire generee a partir du code",
-      "Notes techniques automatisees pour chaque release",
-      "Uniformite des livrables au sein de l'equipe",
+      "Documentation claire générée à partir du code",
+      "Notes techniques automatisées pour chaque release",
+      "Uniformité des livrables au sein de l'équipe",
     ],
   },
 ];
 
 const benefits = [
-  { number: "30-50%", label: "de gain de temps sur le developpement" },
-  { number: "Moins d'erreurs", label: "et meilleure maintenabilite" },
-  { number: "Livraisons rapides", label: "sans sacrifier la qualite" },
-  { number: "Couts reduits", label: "de developpement" },
+  { number: "30-50%", label: "de gain de temps sur le développement" },
+  { number: "Moins d'erreurs", label: "et meilleure maintenabilité" },
+  { number: "Livraisons rapides", label: "sans sacrifier la qualité" },
+  { number: "Coûts réduits", label: "de développement" },
 ];
 
 const whyUs = [
-  "Developpeurs humains augmentes par l'IA",
-  "Delais reduits sans perte de qualite",
-  "Approche pragmatique et orientee resultats",
-  "Innovation continue adaptee a vos besoins",
+  "Développeurs humains augmentés par l'IA",
+  "Délais réduits sans perte de qualité",
+  "Approche pragmatique et orientée résultats",
+  "Innovation continue adaptée à vos besoins",
 ];
 
 export default function DeveloppementWebPage() {
@@ -94,13 +94,13 @@ export default function DeveloppementWebPage() {
               Services
             </Link>
             <h1 className="text-4xl font-bold tracking-tight text-white lg:text-5xl">
-              Developpement Web{" "}
+              Développement Web{" "}
               <span className="bg-gradient-to-r from-accent-400 to-accent-300 bg-clip-text text-transparent">
-                Augmente par l&apos;IA
+                Augmenté par l&apos;IA
               </span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-primary-300">
-              Chez SOLDEV, nous avons fait de l&apos;intelligence artificielle un veritable levier de performance pour le developpement informatique.
+              Chez SOLDEV, nous avons fait de l&apos;intelligence artificielle un véritable levier de performance pour le développement informatique.
             </p>
           </AnimatedSection>
         </div>
@@ -113,18 +113,18 @@ export default function DeveloppementWebPage() {
             <div className="rounded-2xl border border-primary-100 bg-primary-50 p-8 lg:p-12">
               <h2 className="text-2xl font-bold text-primary-900">Notre mission</h2>
               <p className="mt-3 text-gray-600 leading-relaxed">
-                Proposer des solutions plus rapides, fiables et rentables en combinant l&apos;expertise humaine avec les technologies avancees d&apos;IA.
+                Proposer des solutions plus rapides, fiables et rentables en combinant l&apos;expertise humaine avec les technologies avancées d&apos;IA.
               </p>
             </div>
           </AnimatedSection>
 
           <AnimatedSection className="mt-20">
-            <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">Methodologie</span>
+            <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">Méthodologie</span>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900">
               Comment nous utilisons l&apos;IA <span className="text-primary-600">au quotidien</span>
             </h2>
             <p className="mt-4 max-w-3xl text-gray-500">
-              L&apos;IA est integree a chaque etape de notre production, grace a des outils comme GitHub Copilot, Claude Code, Cursor, SonarQube IA, et bien d&apos;autres.
+              L&apos;IA est intégrée à chaque étape de notre production, grâce à des outils comme GitHub Copilot, Claude Code, Cursor, SonarQube IA, et bien d&apos;autres.
             </p>
           </AnimatedSection>
 
@@ -164,7 +164,7 @@ export default function DeveloppementWebPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <AnimatedSection className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Benefices <span className="text-primary-600">concrets</span> pour nos clients
+              Bénéfices <span className="text-primary-600">concrets</span> pour nos clients
             </h2>
           </AnimatedSection>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -219,9 +219,9 @@ export default function DeveloppementWebPage() {
       <section className="bg-primary-950 py-24">
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
           <AnimatedSection>
-            <h2 className="text-3xl font-bold text-white">Pret a lancer votre projet web ?</h2>
+            <h2 className="text-3xl font-bold text-white">Prêt à lancer votre projet web ?</h2>
             <p className="mx-auto mt-4 max-w-xl text-primary-300">
-              Contactez-nous pour discuter de vos besoins et recevoir une proposition personnalisee.
+              Contactez-nous pour discuter de vos besoins et recevoir une proposition personnalisée.
             </p>
             <Link
               href="/contact"

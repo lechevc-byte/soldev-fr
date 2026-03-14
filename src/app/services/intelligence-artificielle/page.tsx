@@ -14,9 +14,9 @@ const aiUseCases = [
     title: "Chatbots & Assistants intelligents",
     subtitle: "Avec les APIs OpenAI, Claude (Anthropic) et Mistral :",
     items: [
-      "Agents conversationnels connectes a vos bases de donnees",
-      "Support client automatise 24/7 avec escalade intelligente",
-      "Assistants internes pour accelerer la productivite des equipes",
+      "Agents conversationnels connectés à vos bases de données",
+      "Support client automatisé 24/7 avec escalade intelligente",
+      "Assistants internes pour accélérer la productivité des équipes",
     ],
   },
   {
@@ -25,12 +25,12 @@ const aiUseCases = [
         <line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" />
       </svg>
     ),
-    title: "Modeles predictifs & Machine Learning",
-    subtitle: "Grace a Python, scikit-learn, TensorFlow, PyTorch et Hugging Face :",
+    title: "Modèles prédictifs & Machine Learning",
+    subtitle: "Grâce à Python, scikit-learn, TensorFlow, PyTorch et Hugging Face :",
     items: [
-      "Prevision de la demande, du churn et des tendances marche",
+      "Prévision de la demande, du churn et des tendances marché",
       "Scoring et segmentation clients automatiques",
-      "Optimisation des prix et recommandations personnalisees",
+      "Optimisation des prix et recommandations personnalisées",
     ],
   },
   {
@@ -42,11 +42,11 @@ const aiUseCases = [
       </svg>
     ),
     title: "Vision par ordinateur",
-    subtitle: "Avec OpenCV, YOLO, Detectron2 et les modeles multimodaux :",
+    subtitle: "Avec OpenCV, YOLO, Detectron2 et les modèles multimodaux :",
     items: [
-      "Detection et classification d'objets en temps reel",
-      "Analyse d'images medicales, industrielles ou retail",
-      "OCR intelligent et extraction de donnees depuis des documents",
+      "Détection et classification d'objets en temps réel",
+      "Analyse d'images médicales, industrielles ou retail",
+      "OCR intelligent et extraction de données depuis des documents",
     ],
   },
   {
@@ -62,25 +62,25 @@ const aiUseCases = [
     subtitle: "Avec les LLMs, spaCy, Hugging Face Transformers :",
     items: [
       "Extraction d'informations et analyse de sentiments",
-      "Resume automatique de documents longs",
+      "Résumé automatique de documents longs",
       "Classification et routage intelligent de tickets/emails",
     ],
   },
 ];
 
 const benefits = [
-  { number: "40-70%", label: "de reduction des taches manuelles" },
-  { number: "+95%", label: "de precision sur les predictions" },
-  { number: "ROI rapide", label: "visible des les premiers mois" },
-  { number: "24/7", label: "disponibilite des systemes IA" },
+  { number: "40-70%", label: "de réduction des tâches manuelles" },
+  { number: "+95%", label: "de précision sur les prédictions" },
+  { number: "ROI rapide", label: "visible dès les premiers mois" },
+  { number: "24/7", label: "disponibilité des systèmes IA" },
 ];
 
 const whyUs = [
   "Expertise pointue en LLMs, ML et data science",
-  "Solutions sur mesure, pas de templates generiques",
-  "Integration fluide dans vos systemes existants",
-  "Accompagnement de la conception au deploiement en production",
-  "Veille continue sur les dernieres avancees IA",
+  "Solutions sur mesure, pas de templates génériques",
+  "Intégration fluide dans vos systèmes existants",
+  "Accompagnement de la conception au déploiement en production",
+  "Veille continue sur les dernières avancées IA",
 ];
 
 export default function IntelligenceArtificiellePage() {
@@ -103,7 +103,7 @@ export default function IntelligenceArtificiellePage() {
               </span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-primary-300">
-              Chez SOLDEV, nous concevons et deployons des solutions d&apos;IA qui resolvent des problemes reels et creent de la valeur mesurable pour votre entreprise.
+              Chez SOLDEV, nous concevons et déployons des solutions d&apos;IA qui résolvent des problèmes réels et créent de la valeur mesurable pour votre entreprise.
             </p>
           </AnimatedSection>
         </div>
@@ -116,7 +116,7 @@ export default function IntelligenceArtificiellePage() {
             <div className="rounded-2xl border border-accent-100 bg-accent-50 p-8 lg:p-12">
               <h2 className="text-2xl font-bold text-accent-900">Notre approche</h2>
               <p className="mt-3 text-gray-600 leading-relaxed">
-                Nous ne vendons pas de l&apos;IA pour le buzz. Chaque solution est concue pour resoudre un probleme metier precis, avec un ROI mesurable et une integration fluide dans vos systemes existants.
+                Nous ne vendons pas de l&apos;IA pour le buzz. Chaque solution est conçue pour résoudre un problème métier précis, avec un ROI mesurable et une intégration fluide dans vos systèmes existants.
               </p>
             </div>
           </AnimatedSection>
@@ -124,10 +124,10 @@ export default function IntelligenceArtificiellePage() {
           <AnimatedSection className="mt-20">
             <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">Nos solutions</span>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900">
-              L&apos;IA appliquee <span className="text-primary-600">a votre metier</span>
+              L&apos;IA appliquée <span className="text-primary-600">à votre métier</span>
             </h2>
             <p className="mt-4 max-w-3xl text-gray-500">
-              Nous maitrisons les principales technologies IA du marche : OpenAI GPT, Claude (Anthropic), Mistral, Llama, LangChain, LlamaIndex, scikit-learn, TensorFlow, PyTorch et bien d&apos;autres.
+              Nous maîtrisons les principales technologies IA du marché : OpenAI GPT, Claude (Anthropic), Mistral, Llama, LangChain, LlamaIndex, scikit-learn, TensorFlow, PyTorch et bien d&apos;autres.
             </p>
           </AnimatedSection>
 
@@ -167,7 +167,7 @@ export default function IntelligenceArtificiellePage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <AnimatedSection className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Benefices <span className="text-accent-600">concrets</span> pour nos clients
+              Bénéfices <span className="text-accent-600">concrets</span> pour nos clients
             </h2>
           </AnimatedSection>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -222,9 +222,9 @@ export default function IntelligenceArtificiellePage() {
       <section className="bg-primary-950 py-24">
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
           <AnimatedSection>
-            <h2 className="text-3xl font-bold text-white">Pret a integrer l&apos;IA dans votre business ?</h2>
+            <h2 className="text-3xl font-bold text-white">Prêt à intégrer l&apos;IA dans votre business ?</h2>
             <p className="mx-auto mt-4 max-w-xl text-primary-300">
-              Contactez-nous pour un audit gratuit de vos cas d&apos;usage IA et recevez une proposition personnalisee.
+              Contactez-nous pour un audit gratuit de vos cas d&apos;usage IA et recevez une proposition personnalisée.
             </p>
             <Link
               href="/contact"

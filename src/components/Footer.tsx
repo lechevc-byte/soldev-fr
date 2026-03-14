@@ -3,19 +3,19 @@ import Link from "next/link";
 
 const footerLinks = {
   services: [
-    { href: "/services/developpement-web", label: "Developpement Web" },
+    { href: "/services/developpement-web", label: "Développement Web" },
     { href: "/services/intelligence-artificielle", label: "Intelligence Artificielle" },
     { href: "/services/data", label: "Data & Analytics" },
   ],
   entreprise: [
-    { href: "/a-propos", label: "A propos" },
+    { href: "/a-propos", label: "À propos" },
     { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ],
   legal: [
-    { href: "/mentions-legales", label: "Mentions legales" },
+    { href: "/mentions-legales", label: "Mentions légales" },
     { href: "/politique-cookies", label: "Politique de cookies" },
-    { href: "/politique-confidentialite", label: "Politique de confidentialite" },
+    { href: "/politique-confidentialite", label: "Politique de confidentialité" },
   ],
 };
 
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-gray-900">Legal</h4>
+            <h4 className="text-sm font-semibold text-gray-900">Légal</h4>
             <ul className="mt-4 space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.href}>
@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-gray-200 pt-8 text-center text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} SOLDEV. Tous droits reserves.
+          &copy; {new Date().getFullYear()} SOLDEV. Tous droits réservés.
         </div>
       </div>
     </footer>

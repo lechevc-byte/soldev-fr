@@ -17,7 +17,7 @@ export default function BlogPage() {
               Blog & Articles
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-primary-300">
-              Nos insights sur l&apos;IA, la data, le developpement web et les tendances tech.
+              Nos insights sur l&apos;IA, la data, le développement web et les tendances tech.
             </p>
           </AnimatedSection>
         </div>

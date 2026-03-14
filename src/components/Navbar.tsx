@@ -6,10 +6,10 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { href: "/services/developpement-web", label: "Developpement" },
+  { href: "/services/developpement-web", label: "Développement" },
   { href: "/services/intelligence-artificielle", label: "Intelligence Artificielle" },
   { href: "/services/data", label: "Data & Analytics" },
-  { href: "/a-propos", label: "A propos" },
+  { href: "/a-propos", label: "À propos" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];

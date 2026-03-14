@@ -11,12 +11,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "SOLDEV - Developpement Web, Design & Marketing Digital | France",
+    default: "SOLDEV - Développement Web, Design & Marketing Digital | France",
     template: "%s | SOLDEV France",
   },
   description:
-    "Agence digitale en France. Developpement web, design, marketing digital et intelligence artificielle pour booster votre business.",
-  keywords: ["developpement web", "design", "marketing digital", "France", "agence digitale", "IA", "intelligence artificielle"],
+    "Agence digitale en France. Développement web, design, marketing digital et intelligence artificielle pour booster votre business.",
+  keywords: ["développement web", "design", "marketing digital", "France", "agence digitale", "IA", "intelligence artificielle"],
 };
 
 export default function RootLayout({

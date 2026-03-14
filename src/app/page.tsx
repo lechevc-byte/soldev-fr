@@ -15,8 +15,8 @@ const services = [
         <polyline points="8 6 2 12 8 18" />
       </svg>
     ),
-    title: "Developpement Web & Apps",
-    description: "Applications web et mobiles performantes, sur mesure. De la landing page a la plateforme SaaS complexe, avec un focus performance et scalabilite.",
+    title: "Développement Web & Apps",
+    description: "Applications web et mobiles performantes, sur mesure. De la landing page à la plateforme SaaS complexe, avec un focus performance et scalabilité.",
   },
   {
     icon: (
@@ -29,7 +29,7 @@ const services = [
       </svg>
     ),
     title: "Intelligence Artificielle",
-    description: "Solutions IA sur mesure : chatbots, automatisation, vision par ordinateur, NLP et modeles predictifs pour transformer vos processus metier.",
+    description: "Solutions IA sur mesure : chatbots, automatisation, vision par ordinateur, NLP et modèles prédictifs pour transformer vos processus métier.",
   },
   {
     icon: (
@@ -40,7 +40,7 @@ const services = [
       </svg>
     ),
     title: "Data & Analytics",
-    description: "Pipelines de donnees, data warehouses, dashboards et analyses predictives. Transformez vos donnees brutes en decisions strategiques.",
+    description: "Pipelines de données, data warehouses, dashboards et analyses prédictives. Transformez vos données brutes en décisions stratégiques.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function Home() {
           >
             <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary-50 to-accent-50 px-5 py-2.5 text-sm font-medium text-primary-700">
               <span className="h-2 w-2 rounded-full bg-accent-400" />
-              Developpement &times; IA &times; Data
+              Développement &times; IA &times; Data
             </div>
 
             <h1 className="text-5xl font-light tracking-tight text-gray-900 lg:text-7xl">
@@ -73,8 +73,8 @@ export default function Home() {
 
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-gray-500">
               Nous concevons des solutions intelligentes qui exploitent la puissance de
-              l&apos;intelligence artificielle et de la data pour accelerer votre croissance.
-              En France et a l&apos;international.
+              l&apos;intelligence artificielle et de la data pour accélérer votre croissance.
+              En France et à l&apos;international.
             </p>
 
             <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -82,7 +82,7 @@ export default function Home() {
                 href="/contact"
                 className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary-600 to-primary-700 px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary-600/30"
               >
-                Demarrer un projet
+                Démarrer un projet
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="transition-transform group-hover:translate-x-0.5">
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
@@ -105,10 +105,10 @@ export default function Home() {
             className="mx-auto mt-24 grid max-w-3xl grid-cols-2 gap-8 lg:grid-cols-4"
           >
             {[
-              { number: "50+", label: "Projets livres" },
+              { number: "50+", label: "Projets livrés" },
               { number: "98%", label: "Clients satisfaits" },
-              { number: "5M+", label: "Donnees traitees/jour" },
-              { number: "24h", label: "Temps de reponse" },
+              { number: "5M+", label: "Données traitées/jour" },
+              { number: "24h", label: "Temps de réponse" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-3xl font-bold text-gray-900">{stat.number}</div>
@@ -134,7 +134,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-500 leading-relaxed">
-              Du developpement sur mesure a l&apos;integration IA, nous couvrons l&apos;ensemble
+              Du développement sur mesure à l&apos;intégration IA, nous couvrons l&apos;ensemble
               de vos besoins technologiques avec une expertise de pointe.
             </p>
           </AnimatedSection>
@@ -150,7 +150,7 @@ export default function Home() {
               href="/services"
               className="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition-colors hover:text-primary-700"
             >
-              Decouvrir toutes nos expertises
+              Découvrir toutes nos expertises
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <line x1="5" y1="12" x2="19" y2="12" />
                 <polyline points="12 5 19 12 12 19" />
@@ -175,16 +175,16 @@ export default function Home() {
                 </span>
               </h2>
               <p className="mt-6 text-lg text-gray-500 leading-relaxed">
-                Nous ne parlons pas d&apos;IA par tendance. Nous concevons et deployons
-                des solutions concretes qui transforment vos processus et creent
+                Nous ne parlons pas d&apos;IA par tendance. Nous concevons et déployons
+                des solutions concrètes qui transforment vos processus et créent
                 de la valeur mesurable.
               </p>
               <ul className="mt-8 space-y-4">
                 {[
-                  "Modeles predictifs et machine learning sur mesure",
-                  "Automatisation intelligente des processus metier",
+                  "Modèles prédictifs et machine learning sur mesure",
+                  "Automatisation intelligente des processus métier",
                   "Pipelines data robustes et scalables",
-                  "Integration d'APIs IA (OpenAI, Claude, Mistral)",
+                  "Intégration d'APIs IA (OpenAI, Claude, Mistral)",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <div className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent-100">
@@ -224,7 +224,7 @@ export default function Home() {
                       </div>
                       <div>
                         <div className="text-2xl font-bold text-gray-900">+150%</div>
-                        <div className="text-sm text-gray-400">precision des predictions</div>
+                        <div className="text-sm text-gray-400">précision des prédictions</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-5">
@@ -235,7 +235,7 @@ export default function Home() {
                       </div>
                       <div>
                         <div className="text-2xl font-bold text-gray-900">-40%</div>
-                        <div className="text-sm text-gray-400">couts operationnels</div>
+                        <div className="text-sm text-gray-400">coûts opérationnels</div>
                       </div>
                     </div>
                   </div>
@@ -252,10 +252,10 @@ export default function Home() {
           <AnimatedSection>
             <h2 className="text-4xl font-light tracking-tight text-gray-900 lg:text-5xl">
               Une approche{" "}
-              <span className="font-bold">humaine</span>, amplifiee par la technologie
+              <span className="font-bold">humaine</span>, amplifiée par la technologie
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-500 leading-relaxed">
-              L&apos;IA ne remplace pas l&apos;expertise humaine, elle la demultiplie. Notre equipe est au coeur de chaque projet, utilisant l&apos;IA et la data comme des outils puissants au service de vos ambitions.
+              L&apos;IA ne remplace pas l&apos;expertise humaine, elle la démultiplie. Notre équipe est au c&oelig;ur de chaque projet, utilisant l&apos;IA et la data comme des outils puissants au service de vos ambitions.
             </p>
           </AnimatedSection>
         </div>
@@ -273,15 +273,15 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
           <AnimatedSection>
             <h2 className="text-4xl font-light tracking-tight text-gray-900 lg:text-5xl">
-              Pret a accelerer votre{" "}
+              Prêt à accélérer votre{" "}
               <span className="font-bold bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
                 transformation
               </span>
               ?
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg text-gray-500">
-              Parlons de vos objectifs et decouvrons ensemble comment
-              l&apos;IA et la data peuvent transformer votre activite. Premier echange gratuit.
+              Parlons de vos objectifs et découvrons ensemble comment
+              l&apos;IA et la data peuvent transformer votre activité. Premier échange gratuit.
             </p>
             <div className="mt-10">
               <Link

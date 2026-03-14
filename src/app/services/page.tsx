@@ -5,24 +5,24 @@ import ServiceCard from "@/components/ServiceCard";
 import Link from "next/link";
 
 const devServices = [
-  { title: "Applications Web Sur Mesure", description: "Sites et applications performants, elegants et optimises pour tous les appareils." },
-  { title: "Applications SaaS", description: "Plateformes SaaS completes avec authentification, facturation et API." },
+  { title: "Applications Web Sur Mesure", description: "Sites et applications performants, élégants et optimisés pour tous les appareils." },
+  { title: "Applications SaaS", description: "Plateformes SaaS complètes avec authentification, facturation et API." },
   { title: "APIs & Microservices", description: "Architectures backend scalables, APIs REST/GraphQL et microservices." },
-  { title: "Performance & SEO", description: "Optimisation technique pour un referencement et des performances optimaux." },
+  { title: "Performance & SEO", description: "Optimisation technique pour un référencement et des performances optimaux." },
 ];
 
 const iaServices = [
-  { title: "Chatbots & Assistants IA", description: "Agents conversationnels intelligents integres a vos systemes existants." },
-  { title: "Modeles Predictifs", description: "Machine learning et deep learning pour anticiper tendances et comportements." },
-  { title: "Vision par Ordinateur", description: "Analyse d'images, detection d'objets et classification automatique." },
-  { title: "Traitement du Langage", description: "NLP, extraction d'informations, resume automatique et analyse de sentiments." },
+  { title: "Chatbots & Assistants IA", description: "Agents conversationnels intelligents intégrés à vos systèmes existants." },
+  { title: "Modèles Prédictifs", description: "Machine learning et deep learning pour anticiper tendances et comportements." },
+  { title: "Vision par Ordinateur", description: "Analyse d'images, détection d'objets et classification automatique." },
+  { title: "Traitement du Langage", description: "NLP, extraction d'informations, résumé automatique et analyse de sentiments." },
 ];
 
 const dataServices = [
-  { title: "Data Engineering", description: "Pipelines de donnees robustes, ETL/ELT et orchestration avec Airflow, dbt." },
+  { title: "Data Engineering", description: "Pipelines de données robustes, ETL/ELT et orchestration avec Airflow, dbt." },
   { title: "Data Warehousing", description: "Conception et gestion de data warehouses (BigQuery, Snowflake, Redshift)." },
-  { title: "Dashboards & BI", description: "Tableaux de bord interactifs et reporting automatise avec des insights actionnables." },
-  { title: "Analytics Predictif", description: "Modeles statistiques et ML pour des decisions basees sur les donnees." },
+  { title: "Dashboards & BI", description: "Tableaux de bord interactifs et reporting automatisé avec des insights actionnables." },
+  { title: "Analytics Prédictif", description: "Modèles statistiques et ML pour des décisions basées sur les données." },
 ];
 
 function CodeIcon() {
@@ -106,10 +106,10 @@ export default function ServicesPage() {
           <AnimatedSection>
             <span className="text-sm font-semibold uppercase tracking-wider text-accent-400">Nos expertises</span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-white lg:text-5xl">
-              Developpement, IA & Data
+              Développement, IA & Data
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-primary-300">
-              De la conception a la mise en production, nous proposons des solutions technologiques completes pour les entreprises ambitieuses.
+              De la conception à la mise en production, nous proposons des solutions technologiques complètes pour les entreprises ambitieuses.
             </p>
           </AnimatedSection>
         </div>
@@ -117,10 +117,10 @@ export default function ServicesPage() {
 
       <ServiceSection
         id="dev"
-        badge="Developpement"
+        badge="Développement"
         title="Des applications qui"
         highlight="performent"
-        description="Nous concevons des solutions web modernes et scalables, des sites vitrines aux plateformes SaaS complexes. L'IA optimise l'experience utilisateur et la performance."
+        description="Nous concevons des solutions web modernes et scalables, des sites vitrines aux plateformes SaaS complexes. L'IA optimise l'expérience utilisateur et la performance."
         services={devServices}
         icon={<CodeIcon />}
         detailHref="/services/developpement-web"
@@ -131,7 +131,7 @@ export default function ServicesPage() {
         badge="Intelligence Artificielle"
         title="L'IA qui"
         highlight="transforme"
-        description="Nous concevons des solutions d'intelligence artificielle sur mesure pour automatiser, predire et optimiser vos processus metier."
+        description="Nous concevons des solutions d'intelligence artificielle sur mesure pour automatiser, prédire et optimiser vos processus métier."
         services={iaServices}
         icon={<BrainIcon />}
         bgClass="bg-gray-50"
@@ -141,9 +141,9 @@ export default function ServicesPage() {
       <ServiceSection
         id="data"
         badge="Data"
-        title="Des donnees qui"
+        title="Des données qui"
         highlight="parlent"
-        description="Nous construisons des infrastructures data solides et des analyses avancees pour transformer vos donnees brutes en avantage concurrentiel."
+        description="Nous construisons des infrastructures data solides et des analyses avancées pour transformer vos données brutes en avantage concurrentiel."
         services={dataServices}
         icon={<ChartIcon />}
         detailHref="/services/data"
@@ -155,7 +155,7 @@ export default function ServicesPage() {
           <AnimatedSection>
             <h2 className="text-3xl font-bold text-white">Besoin d&apos;une solution sur mesure ?</h2>
             <p className="mx-auto mt-4 max-w-xl text-primary-300">
-              Chaque projet est unique. Contactez-nous pour discuter de vos besoins et recevoir une proposition adaptee.
+              Chaque projet est unique. Contactez-nous pour discuter de vos besoins et recevoir une proposition adaptée.
             </p>
             <Link
               href="/contact"

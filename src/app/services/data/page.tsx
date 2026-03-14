@@ -17,8 +17,8 @@ const aiUseCases = [
     subtitle: "Avec Apache Airflow, dbt, Spark, Kafka et les services cloud :",
     items: [
       "Conception de pipelines ETL/ELT robustes et scalables",
-      "Ingestion de donnees en temps reel et batch processing",
-      "Data quality checks et monitoring automatise",
+      "Ingestion de données en temps réel et batch processing",
+      "Data quality checks et monitoring automatisé",
     ],
   },
   {
@@ -30,11 +30,11 @@ const aiUseCases = [
       </svg>
     ),
     title: "Data Warehousing & Lakehouse",
-    subtitle: "Grace a BigQuery, Snowflake, Redshift et Databricks :",
+    subtitle: "Grâce à BigQuery, Snowflake, Redshift et Databricks :",
     items: [
-      "Architecture data warehouse optimisee pour vos cas d'usage",
-      "Modelisation dimensionnelle et star schema",
-      "Migration et consolidation de sources de donnees multiples",
+      "Architecture data warehouse optimisée pour vos cas d'usage",
+      "Modélisation dimensionnelle et star schema",
+      "Migration et consolidation de sources de données multiples",
     ],
   },
   {
@@ -46,9 +46,9 @@ const aiUseCases = [
     title: "Dashboards & Business Intelligence",
     subtitle: "Avec Metabase, Looker Studio, Power BI et Tableau :",
     items: [
-      "Tableaux de bord interactifs et self-service pour vos equipes",
-      "KPIs en temps reel et alertes automatiques",
-      "Reporting automatise avec envoi programme",
+      "Tableaux de bord interactifs et self-service pour vos équipes",
+      "KPIs en temps réel et alertes automatiques",
+      "Reporting automatisé avec envoi programmé",
     ],
   },
   {
@@ -57,35 +57,35 @@ const aiUseCases = [
         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
       </svg>
     ),
-    title: "Analytics predictif & Data Science",
+    title: "Analytics prédictif & Data Science",
     subtitle: "Avec Python, R, scikit-learn et les notebooks Jupyter :",
     items: [
-      "Modeles predictifs pour anticiper tendances et risques",
-      "Segmentation avancee et scoring clients",
-      "A/B testing et experimentation data-driven",
+      "Modèles prédictifs pour anticiper tendances et risques",
+      "Segmentation avancée et scoring clients",
+      "A/B testing et expérimentation data-driven",
     ],
   },
 ];
 
 const benefitsTop = [
   { number: "10x", label: "plus rapide pour obtenir des insights" },
-  { number: "Donnees fiables", label: "et centralisees" },
-  { number: "Decisions", label: "basees sur les donnees, pas l'intuition" },
+  { number: "Données fiables", label: "et centralisées" },
+  { number: "Décisions", label: "basées sur les données, pas l'intuition" },
   { number: "Scalable", label: "du startup au grand compte" },
 ];
 
 const benefitsBottom = [
-  { title: "Gouvernance", description: "Donnees tracables, documentees et conformes RGPD" },
-  { title: "Temps reel", description: "Monitoring et alertes en continu sur vos KPIs" },
-  { title: "Self-service", description: "Vos equipes autonomes pour explorer les donnees" },
+  { title: "Gouvernance", description: "Données traçables, documentées et conformes RGPD" },
+  { title: "Temps réel", description: "Monitoring et alertes en continu sur vos KPIs" },
+  { title: "Self-service", description: "Vos équipes autonomes pour explorer les données" },
 ];
 
 const whyUs = [
-  "Data engineers et data scientists experimentes",
+  "Data engineers et data scientists expérimentés",
   "Stack moderne et cloud-native (GCP, AWS, Azure)",
-  "Approche iterative : POC rapide puis mise a l'echelle",
-  "Integration fluide avec vos outils existants",
-  "Accompagnement de bout en bout, du besoin a la production",
+  "Approche itérative : POC rapide puis mise à l'échelle",
+  "Intégration fluide avec vos outils existants",
+  "Accompagnement de bout en bout, du besoin à la production",
 ];
 
 export default function DataPage() {
@@ -104,11 +104,11 @@ export default function DataPage() {
             <h1 className="text-4xl font-bold tracking-tight text-white lg:text-5xl">
               Data & Analytics{" "}
               <span className="bg-gradient-to-r from-accent-400 to-accent-300 bg-clip-text text-transparent">
-                a Grande Echelle
+                à Grande Échelle
               </span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-primary-300">
-              Chez SOLDEV, nous transformons vos donnees brutes en avantage concurrentiel grace a des pipelines robustes, des analyses avancees et des dashboards actionnables.
+              Chez SOLDEV, nous transformons vos données brutes en avantage concurrentiel grâce à des pipelines robustes, des analyses avancées et des dashboards actionnables.
             </p>
           </AnimatedSection>
         </div>
@@ -121,18 +121,18 @@ export default function DataPage() {
             <div className="rounded-2xl border border-primary-100 bg-primary-50 p-8 lg:p-12">
               <h2 className="text-2xl font-bold text-primary-900">Notre approche</h2>
               <p className="mt-3 text-gray-600 leading-relaxed">
-                La combinaison de nos experts humains et des outils de data engineering modernes nous permet de construire des infrastructures de donnees fiables, scalables et orientees business.
+                La combinaison de nos experts humains et des outils de data engineering modernes nous permet de construire des infrastructures de données fiables, scalables et orientées business.
               </p>
             </div>
           </AnimatedSection>
 
           <AnimatedSection className="mt-20">
-            <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">Methodologie</span>
+            <span className="text-sm font-semibold uppercase tracking-wider text-primary-600">Méthodologie</span>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900">
-              Comment nous exploitons <span className="text-primary-600">vos donnees</span>
+              Comment nous exploitons <span className="text-primary-600">vos données</span>
             </h2>
             <p className="mt-4 max-w-3xl text-gray-500">
-              Nous utilisons les meilleures technologies du marche : Apache Airflow, dbt, Spark, Kafka, BigQuery, Snowflake, Metabase, Looker Studio, Python, et bien d&apos;autres.
+              Nous utilisons les meilleures technologies du marché : Apache Airflow, dbt, Spark, Kafka, BigQuery, Snowflake, Metabase, Looker Studio, Python, et bien d&apos;autres.
             </p>
           </AnimatedSection>
 
@@ -172,7 +172,7 @@ export default function DataPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <AnimatedSection className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Benefices <span className="text-primary-600">concrets</span> pour nos clients
+              Bénéfices <span className="text-primary-600">concrets</span> pour nos clients
             </h2>
           </AnimatedSection>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -242,9 +242,9 @@ export default function DataPage() {
       <section className="bg-primary-950 py-24">
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
           <AnimatedSection>
-            <h2 className="text-3xl font-bold text-white">Pret a exploiter le potentiel de vos donnees ?</h2>
+            <h2 className="text-3xl font-bold text-white">Prêt à exploiter le potentiel de vos données ?</h2>
             <p className="mx-auto mt-4 max-w-xl text-primary-300">
-              Contactez-nous pour un audit data gratuit et decouvrez comment transformer vos donnees en avantage concurrentiel.
+              Contactez-nous pour un audit data gratuit et découvrez comment transformer vos données en avantage concurrentiel.
             </p>
             <Link
               href="/contact"
