@@ -210,6 +210,7 @@ export const articles: Article[] = [
     excerpt:
       "Comparatif détaillé des deux frameworks React leaders. Performance, DX, écosystème : notre analyse pour vous aider à choisir.",
     readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800&q=80",
     content: `
 <p>Le choix d'un framework frontend est une décision structurante pour tout projet web. En 2026, Next.js et Remix restent les deux options principales dans l'écosystème React. Voici notre analyse basée sur des dizaines de projets livrés.</p>
 
@@ -261,6 +262,7 @@ export const articles: Article[] = [
     excerpt:
       "Comment les PME françaises peuvent concrètement utiliser l'IA pour automatiser leurs processus sans budget colossal.",
     readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
     content: `
 <p>L'automatisation par l'IA n'est plus réservée aux grandes entreprises. Avec les bons outils et la bonne approche, n'importe quelle PME peut commencer à automatiser ses processus répétitifs et à gagner en productivité.</p>
 
@@ -308,6 +310,7 @@ export const articles: Article[] = [
     excerpt:
       "OWASP Top 10, authentification, chiffrement : guide complet pour sécuriser vos applications web modernes.",
     readTime: "9 min",
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
     content: `
 <p>La sécurité des applications web n'est pas une option, c'est une obligation. Avec la multiplication des cyberattaques et le renforcement des réglementations (RGPD, NIS2), chaque entreprise doit s'assurer que ses applications sont robustes face aux menaces.</p>
 
